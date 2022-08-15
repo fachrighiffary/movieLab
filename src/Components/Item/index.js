@@ -5,12 +5,51 @@ const Item = ({
   children,
   flex,
   justifycenter,
-  alignCenter, }) => {
+  alignCenter,
+  backgroundColor,
+  marginTop,
+  marginBottom,
+  marginRight,
+  marginLeft,
+  marginVertical,
+  marginHorizontal,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  paddingVertical,
+  paddingHorizontal,
+  height,
+  width,
+  borderRadius,
+  opacity,
+  position,
+  flexDirection
+}) => {
   return (
     <View style={[
       flex ? { flex: 1 } : null,
       justifycenter ? { justifyContent: 'center' } : null,
-      alignCenter ? { alignItems: 'center' } : null
+      alignCenter ? { alignItems: 'center' } : null,
+      backgroundColor ? { backgroundColor: backgroundColor } : null,
+      marginTop ? {marginTop: marginTop} : null,
+      marginBottom ? {marginBottom: marginBottom} : null,
+      marginRight ? {marginRight: marginRight} : null,
+      marginLeft ? {marginLeft: marginLeft} : null,
+      marginVertical ? {marginVertical: marginVertical} : null,
+      marginHorizontal ? {marginHorizontal: marginHorizontal} : null,
+      paddingTop ? {paddingTop: paddingTop} : null,
+      paddingBottom ? {paddingBottom: paddingBottom} : null,
+      paddingLeft ? {paddingLeft: paddingLeft} : null,
+      paddingRight ? {paddingRight: paddingRight} : null,
+      paddingVertical ? {paddingVertical: paddingVertical} : null,
+      paddingHorizontal ? {paddingHorizontal: paddingHorizontal} : null,
+      height ? {height: height} : null,
+      width ? {width: width} : null,
+      borderRadius ? {borderRadius: borderRadius} : null,
+      opacity ? {opacity: opacity} : null,
+      position ? {position: position} : null,
+      flexDirection ? {flexDirection: flexDirection} : null,
     ]}>
       {children}
     </View>

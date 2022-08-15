@@ -4,6 +4,7 @@ import Home from 'screens/Home';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import DeatilMovies from 'screens/Detail';
 
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
             <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="Splash" component={Splash} screenOptions={{ headerShown: false }} />
                 <Stack.Screen name="Home" component={Home} screenOptions={{ headerShown: false }} />
+                <Stack.Screen name="Detail" component={DeatilMovies} screenOptions={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

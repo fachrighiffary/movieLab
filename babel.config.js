@@ -9,9 +9,10 @@ module.exports = {
           screens : './src/Screens',
           components : './src/Components',
           assets : './src/Assets',
-          redux : './src/Redux',
+          api : './src/Api',
           home: './src/Screens/Home',
           splash: './src/Screens/Splash',
+          utils : './src/Utils'
 
         },
         extensions: [

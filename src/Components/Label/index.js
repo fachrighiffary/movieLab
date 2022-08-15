@@ -5,7 +5,7 @@ const Label = ({ children, color, size, textCenter }) => {
     return (
         <Text style={[
             color ? { color: color } : { color: 'black' },
-            size ? { size: size } : null,
+            size ? { fontSize: size } : null,
             textCenter ? { textAlign: 'center' } : null
         ]}>{children}</Text>
     )
